@@ -1,0 +1,408 @@
+$ligthblue: lightblue;
+$ligthsalmon: lightsalmon;
+$lightgoldenrodyellow: lightgoldenrodyellow;
+
+.conteiner{
+	width: 80%;
+	max-width: 1000px;
+	height: auto;
+    margin: 0 auto;
+	overflow: hidden;		
+}
+body{
+	margin: 0;
+	padding: 0;
+    background-image: url("img/fondo.jpg");
+}
+
+@media screen and (max-width: 750px){
+	h6{display: none;}
+}
+header{
+	display: flex;
+	flex-direction: row;
+	width: 100%;
+	height: auto;
+	.logo{
+		display: flex;
+		flex-direction: row;
+		padding: 10px 0px 20px 5px ; 
+		width: 36%;
+		height: auto;
+		animation-name: animate__jello;
+		animation-duration: 5s;
+	}
+    .wsp{
+		list-style-type: none;
+	    margin: 5px;
+	    font-size: 40px;
+    }
+    .wsp i{
+	    font-size: 40px;
+	    color: green;
+	    background-color: $ligthsalmon;
+        border-style: dashed;
+    }
+    .wsp i:hover{
+	    transform: rotate(45deg);
+    }
+	.nav-item{
+		background-color: $ligthsalmon;
+		text-align: center;
+		text-decoration: none;
+		list-style-type: none;
+		font-family: 'Yomogi', cursive; 
+		font-size: 15px;
+		font-weight: bold;
+		border: 2px outset $lightgoldenrodyellow;
+		padding: auto;
+		margin: 15px;
+	}
+	.nav-item:hover{
+	    transform: scale(1.1);
+		
+	}
+	.nav-link{
+	    text-decoration: none;
+	    background: $ligthsalmon;
+		color: rgb(0, 153, 255) !important;
+	}
+	.nav-link:hover{
+	    background: $ligthblue; 
+	}
+}
+.sliders{
+	text-align: center;
+	position: relative;
+	top: 60px;
+	background-color: $ligthblue;
+	padding: 10px;
+	.carousel-inner img{
+	    width: 100% vw;
+        height: 100% vh;
+    }
+}
+h2{
+	background: $lightgoldenrodyellow;
+	border: 5px solid $ligthsalmon;
+	text-align: center;
+	font-family: 'Yomogi', cursive; 
+}
+.productos{
+    position: absolute;
+	top: 150px;
+}
+.productos img{
+    border: none;
+    text-align: center;
+    animation-name: animate__rollOut;
+    animation-iteration-count: infinite;
+    animation-duration: 5s;
+    @keyframes animate__rollOut{
+    50%{transform: translate(50px); }
+	}
+.productos h2:hover{
+	transform: scale(1.1);
+	}
+}
+.aside{
+	background: $lightgoldenrodyellow;
+	font-size: 50px;
+	margin: auto;
+	padding: 30px 30px 30px 30px;
+	line-height: 30px;
+	border: 2px dashed $ligthsalmon;
+	display: flex;
+	flex-wrap: wrap;
+	justify-content: center;
+	align-content: stretch;
+	position: absolute;
+    top: 150px;
+	.plane{
+    	color: gray;	
+	    display: flex;
+	    flex-basis: 50px;
+	    margin: 10px;
+	}
+	.hotel{
+	    color: yellow;
+	    display: flex;
+	    flex-basis: 50px;
+	    margin: 10px;
+	}
+	.seguro{
+	    color: $ligthsalmon;
+	    display: flex;
+	    flex-basis: 50px;
+	    margin: 10px;
+	}
+	.paq{
+	    color: $ligthblue;
+	    display: flex;
+	    flex-basis: 50px;	
+	    margin: 10px;
+	}
+}
+h6{
+    padding: 20px;
+	border: 0;
+	text-align: center;
+	color: $lightgoldenrodyellow;
+	background-color: $ligthsalmon;
+	width: 15%;
+	position: absolute;
+	top: 550px;
+	left: 950px;
+    animation-name: animate__swing;
+    animation-iteration-count: infinite;
+    animation-duration: 4s;
+    @keyframes animate__swing{
+	0%{width: 200px;
+		background-color: gray;}
+	40%{width: 200px;
+	background-color: $ligthblue;}
+	80%{width: 200px;
+		background-color: gray;}
+    }
+}
+.doc{
+	font-size: 15px;
+	border: 2px dashed $lightgoldenrodyellow;
+	background-image: linear-gradient($ligthsalmon, $ligthblue, $ligthsalmon);
+	font-family:'Yomogi', cursive;
+	position: relative;
+	top: 150px;
+	text-align: center;
+	font-weight: bold;
+	.fas{
+	    font-size: 35px;
+	    background-color: $lightgoldenrodyellow;
+	}
+}
+.table{
+    border:  5px dashed $ligthsalmon;
+    color: gray;
+    position: absolute;
+    top: 150px;
+    right: 10px;     
+	.button{
+		text-decoration: none;
+		font-family: 'Yomogi', cursive;
+		transition: width 5s;
+	}
+	.decoButton{
+		text-decoration: none;
+		flex: 0 0 200px;
+		margin: 10px;
+		border: 1px solid #ccc;
+		box-shadow: 2px 2px 6px 0px  rgba(0,0,0,0.3);
+		background: gray;
+		color: white;
+		padding: 10px;
+		width: 100%;
+		transition: font-size 2s;
+	}
+	.decoButton:hover{
+		background: $ligthblue;
+		font-size: 35px;
+		text-decoration: none;
+	}
+    h3{
+		font: 20px 'Yomogi', cursive;
+		font-weight: bold;
+		background-color: $ligthsalmon;
+		margin: 10px;
+		border: 2px solid $lightgoldenrodyellow;
+		text-align: center;
+		text-transform: uppercase;
+		}
+}
+.videoTur{
+	background-color: $ligthblue;
+	border: none;
+	width: auto;
+	height: 200px;
+	position: relative;
+	top: 150px;
+	}
+footer{
+		background-color: $lightgoldenrodyellow;
+		border:5px solid $ligthsalmon;
+		font-family: 'Yomogi', cursive; 
+		font-weight: bold;
+		justify-items: center;
+		.pieDePagina1 i {
+			font-size: 25px;
+			margin: 5px;
+			text-align: center;
+			position: relative;
+			top: 05px;
+		}
+		.pieDePagina1 i:first-child{
+			color: blue;
+		}
+		.pieDePagina1 i:nth-child(2){
+			border: 2px solid blueviolet;
+			background-color: deeppink;
+			color: white;
+		}
+		.footer__article--exchange{
+			margin: 5px;
+			text-align: center;
+			position: relative;
+			top: 05px;   
+		}	
+		.pieDePagina3 {
+			margin: 5px;
+			text-align: center;
+			position: relative;
+			top: 05px;}		
+}
+
+$redes:(
+red1: lightblue,
+red2: coral);
+
+@each $red, $color in $redes {
+	.btn--#{$red} {
+        background-color: $color;
+		text-align: center;
+		}
+	
+}
+	
+
+
+h2{
+	background: $lightgoldenrodyellow;
+	border: 5px solid $ligthsalmon;
+	text-align: center;
+	font-family: 'Yomogi', cursive; 	
+}
+.quienesSomos{
+	width: 80%;
+	justify-content: center;
+	font-size: arial;
+	background: $lightgoldenrodyellow;
+	margin: 20px;
+	border: 5px solid $ligthsalmon;
+	text-align: center;
+    font-family: 'Yomogi', cursive;
+	}
+#form{
+	background-color: $ligthsalmon;
+    font-family: 'Yomogi', cursive; 
+	font-weight: bold;
+	list-style-type: none;
+	text-align: center;
+	.comentario{
+		transition: width 20s;
+	}
+    	.comentario:hover{
+	    	width: 90%;
+		    height: 100px;
+	    }
+}
+.map{
+font-size: arial;
+background: $lightgoldenrodyellow;
+width: 300px;
+height: auto;
+margin: 20px;
+border: 5px solid $ligthsalmon;
+text-align: center;
+font-family: 'Yomogi', cursive; 
+position: relative;
+top: 10px;
+left: 30px;
+}
+h4{
+	font-size: arial;
+	background: $lightgoldenrodyellow;
+	width: 300px;
+	height: auto;
+	margin: 20px;
+	border: 5px solid $ligthsalmon;
+	text-align: center;
+	font-family: 'Yomogi', cursive; 
+	position: relative;
+	top: 10px;
+    left: 30px;
+}
+p{
+font-size: arial;
+background: $lightgoldenrodyellow;
+width: 300px;
+height: auto;
+margin: 20px;
+border: 5px solid $ligthsalmon;
+text-align: center;
+font-family: 'Yomogi', cursive; 
+position: relative;
+top: 10px;
+left: 30px;
+}
+.pago{
+	font-size: 20px;
+    background: $lightgoldenrodyellow;
+    width: 250px;
+    height:auto;
+    margin: 10px;
+    border: 5px solid $ligthsalmon;
+    font-family: 'Yomogi', cursive; 
+    list-style-type: none;
+	text-align: center;
+}
+.imgt{
+    width: 250px;
+    height: auto;
+    border: 5px solid $ligthsalmon;
+}
+.Ayuda{
+	display: grid;            
+	grid-template-columns: 10% 10%;
+	grid-template-rows: 1fr 1fr;
+	grid-row-gap: 60px ;
+	grid-column-gap: 30%;
+	@media screen and(max-width400px){
+		.Ayuda{ display: grid none;
+		}
+    }
+	
+	.Ayuda__deco{ 
+	    background: $lightgoldenrodyellow;
+		width: 300px;
+		height: auto;
+		margin: 20px;
+		border: 5px solid $ligthsalmon;
+		text-align: center;
+		font-family: 'Yomogi', cursive;  
+	}
+}
+h3{
+	font: 20px 'Yomogi', cursive;
+	font-weight: bold;
+	background-color: $ligthsalmon;
+	margin: 10px;
+	border: 2px solid $lightgoldenrodyellow;
+	text-align: center;
+	text-transform: uppercase;
+	}
+	
+	.error{
+    text-decoration: none;
+    width: 250px;
+    height: auto;
+	position: relative;
+	left: 40%;
+	border: dashed;
+    text-transform: uppercase;
+	}
+	
+	
+
+@import "_destinoBace"
+
+
+
+
