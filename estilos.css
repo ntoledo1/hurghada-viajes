@@ -113,11 +113,13 @@ h2 {
   font-family: 'Yomogi', cursive;
 }
 
+/*productos de la izq con botones para enlazar con itinerarios*/
 .productos {
   position: absolute;
   top: 150px;
 }
 
+/*img de miky con animacion*/
 .productos img {
   border: none;
   text-align: center;
@@ -148,6 +150,7 @@ h2 {
           transform: scale(1.1);
 }
 
+/*los 4 botones del cotizador*/
 .aside {
   background: lightgoldenrodyellow;
   font-size: 50px;
@@ -257,6 +260,7 @@ h6 {
   }
 }
 
+/*documentacion para viajar*/
 .doc {
   font-size: 15px;
   border: 2px dashed lightgoldenrodyellow;
@@ -274,6 +278,7 @@ h6 {
   background-color: lightgoldenrodyellow;
 }
 
+/*tabla con los 4 productos principales*/
 .table {
   border: 5px dashed lightsalmon;
   color: gray;
@@ -322,6 +327,7 @@ h6 {
   text-transform: uppercase;
 }
 
+/*video de viajeros*/
 .videoTur {
   background-color: lightblue;
   border: none;
@@ -381,6 +387,7 @@ footer .pieDePagina3 {
   text-align: center;
 }
 
+/*todos los titulos dentro del menu, llevan h2*/
 h2 {
   background: lightgoldenrodyellow;
   border: 5px solid lightsalmon;
@@ -388,6 +395,7 @@ h2 {
   font-family: 'Yomogi', cursive;
 }
 
+/*dentro del boton de Empresa*/
 .quienesSomos {
   width: 80%;
   -webkit-box-pack: center;
@@ -401,6 +409,7 @@ h2 {
   font-family: 'Yomogi', cursive;
 }
 
+/*dentro del boton Contacto*/
 #form {
   background-color: lightsalmon;
   font-family: 'Yomogi', cursive;
@@ -447,6 +456,7 @@ h4 {
   left: 30px;
 }
 
+/*dentro del boton de Empresa*/
 p {
   font-size: arial;
   background: lightgoldenrodyellow;
@@ -461,6 +471,7 @@ p {
   left: 30px;
 }
 
+/*dentro del boton de Administracion*/
 .pago {
   font-size: 20px;
   background: lightgoldenrodyellow;
@@ -479,6 +490,7 @@ p {
   border: 5px solid lightsalmon;
 }
 
+/*dentro del boton de Ayuda*/
 .Ayuda {
   display: -ms-grid;
   display: grid;
@@ -516,6 +528,7 @@ h3 {
   text-transform: uppercase;
 }
 
+/*dentro del boton de Error 404*/
 .error {
   text-decoration: none;
   width: 250px;
@@ -526,6 +539,7 @@ h3 {
   text-transform: uppercase;
 }
 
+/*estan todos los paquetes,destios que seran modificados constantemente*/
 .destinoBACE {
   min-height: auto vh;
   background-image: -webkit-gradient(linear, left bottom, left top, color-stop(30%, lightsalmon), to(gray));
