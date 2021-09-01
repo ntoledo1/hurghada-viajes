@@ -1,0 +1,50 @@
+$ligthblue: lightblue;
+$ligthsalmon: lightsalmon;
+$lightgoldenrodyellow: lightgoldenrodyellow;
+
+.destinoBACE{
+	min-height: auto vh;
+    background-image: linear-gradient(to top, $ligthsalmon 30% , gray);
+    color: blue;
+    font-weight: bold;
+	text-decoration: none;
+	list-style-type: none;
+	font-size: 18px;
+	font-family: 'Yomogi'; 
+	border: 1px solid $lightgoldenrodyellow;
+	text-align: center;
+	margin: 2%;
+	padding: 20px;
+}
+
+.div--destinoEUROPA{
+	border: none;
+	display: grid;
+	grid-template-columns: 40% 40% ;
+	grid-template-rows: 1fr 1fr 1fr;
+	grid-row-gap: 50px ;
+	grid-column-gap: 2%;
+}
+.div--destinoCARIBE{
+	border: none;
+	display: grid;
+	grid-template-columns: 40% 40% ;
+	grid-template-rows: 1fr 1fr 1fr;
+	grid-row-gap: 50px ;
+	grid-column-gap: 2%;
+}
+.div--destinoBRASIL{
+	border: none;
+	display: grid;
+	grid-template-columns: 40% 40% ;
+	grid-template-rows: 1fr 1fr 1fr;
+	grid-row-gap: 50px ;
+	grid-column-gap: 2%;
+}
+.div--destinoARG{
+	display: grid;
+	grid-template-columns: 40% 40% ;
+	grid-template-rows: 1fr 1fr 1fr;
+	grid-row-gap: 50px ;
+	grid-column-gap: 2%;
+}

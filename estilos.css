@@ -1,0 +1,676 @@
+.conteiner {
+  width: 100%;
+  max-width: 1000px;
+  height: auto;
+  margin: 0 auto;
+  overflow: hidden;
+}
+
+body {
+  margin: 0;
+  padding: 0;
+  background-image: url("img/fondo.jpg");
+}
+
+@media screen and (max-width: 750px) {
+  header {
+    background: rgba(0, 162, 255, 0.959);
+  }
+  h6 {
+    display: none;
+  }
+  .pago {
+    position: relative;
+    left: 0px;
+  }
+  .imgt {
+    position: relative;
+    left: 10px;
+  }
+}
+
+@media screen and (max-width: 400px) {
+  header {
+    background: rgba(0, 162, 255, 0.959);
+  }
+  .div--destinoBRASIL {
+    display: grid none;
+    position: relative;
+    top: 50px;
+  }
+  .div--destinoCARIBE {
+    display: grid none;
+    position: relative;
+    top: 50px;
+  }
+  .div--destinoARG {
+    display: grid none;
+    position: relative;
+    top: 50px;
+  }
+  .div--destinoEUROPA {
+    display: grid none;
+    position: relative;
+    top: 50px;
+  }
+  .visitanos {
+    position: relative;
+    right: 50px;
+  }
+}
+
+header {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: row;
+          flex-direction: row;
+  width: 100%;
+  height: auto;
+}
+
+header .logo {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: row;
+          flex-direction: row;
+  padding: 10px 0px 20px 5px;
+  width: 30%;
+  height: auto;
+  -webkit-animation-name: animate__jello;
+          animation-name: animate__jello;
+  -webkit-animation-duration: 5s;
+          animation-duration: 5s;
+}
+
+header .wsp {
+  list-style-type: none;
+  margin: 5px;
+  font-size: 60px;
+}
+
+header .wsp i {
+  font-size: 60px;
+  color: green;
+}
+
+header .wsp i::before {
+  -webkit-transform: translate(-50%, -50%);
+          transform: translate(-50%, -50%);
+  font-size: 30px;
+  color: green;
+  text-transform: uppercase;
+  letter-spacing: .3rem;
+  font-weight: 700;
+  -webkit-transition: .2s ease;
+  transition: .2s ease;
+}
+
+header .wsp i::after {
+  content: "3516326856";
+  -webkit-transform: translate(-50%, -50%) scale(1);
+          transform: translate(-50%, -50%) scale(1);
+  font-size: 13px;
+  color: green;
+  text-transform: uppercase;
+  letter-spacing: .3rem;
+  font-weight: 700;
+  -webkit-transition: .2s ease;
+  transition: .2s ease;
+  opacity: 0;
+}
+
+header .wsp i:hover::before {
+  -webkit-transform: translate(-50%, -50%) scale(3);
+          transform: translate(-50%, -50%) scale(3);
+  opacity: 0;
+}
+
+header .wsp i:hover::after {
+  -webkit-transform: translate(-50%, -50%) scale(1);
+          transform: translate(-50%, -50%) scale(1);
+  opacity: 1;
+}
+
+header .nav-item {
+  background-color: lightsalmon;
+  text-align: center;
+  text-decoration: none;
+  list-style-type: none;
+  font-family: 'Yomogi', cursive;
+  font-size: 15px;
+  font-weight: bold;
+  border: 2px outset lightgoldenrodyellow;
+  padding: auto;
+  margin: 15px;
+}
+
+header .nav-item:hover {
+  -webkit-transform: scale(1.1);
+          transform: scale(1.1);
+}
+
+header .nav-link {
+  text-decoration: none;
+  background: lightsalmon;
+  color: #0099ff !important;
+}
+
+header .nav-link:hover {
+  background: lightblue;
+}
+
+.sliders {
+  text-align: center;
+  position: relative;
+  top: 60px;
+  background-color: lightblue;
+  padding: 10px;
+}
+
+.sliders .carousel-inner img {
+  width: 100% vw;
+  height: 100% vh;
+}
+
+h2 {
+  background: lightgoldenrodyellow;
+  border: 5px solid lightsalmon;
+  text-align: center;
+  font-family: 'Yomogi', cursive;
+}
+
+/*productos de la izq con botones para enlazar con itinerarios*/
+.productos {
+  position: absolute;
+  top: 150px;
+}
+
+/*img de miky con animacion*/
+.productos img {
+  border: none;
+  text-align: center;
+  -webkit-animation-name: animate__rollOut;
+          animation-name: animate__rollOut;
+  -webkit-animation-iteration-count: infinite;
+          animation-iteration-count: infinite;
+  -webkit-animation-duration: 5s;
+          animation-duration: 5s;
+}
+
+@-webkit-keyframes animate__rollOut {
+  50% {
+    -webkit-transform: translate(50px);
+            transform: translate(50px);
+  }
+}
+
+@keyframes animate__rollOut {
+  50% {
+    -webkit-transform: translate(50px);
+            transform: translate(50px);
+  }
+}
+
+.productos img .productos h2:hover {
+  -webkit-transform: scale(1.1);
+          transform: scale(1.1);
+}
+
+/*los 4 botones del cotizador*/
+.aside {
+  background: lightgoldenrodyellow;
+  font-size: 50px;
+  margin: auto;
+  padding: 30px 30px 30px 30px;
+  line-height: 30px;
+  border: 2px dashed lightsalmon;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -ms-flex-line-pack: stretch;
+      align-content: stretch;
+  position: absolute;
+  top: 150px;
+}
+
+.aside .plane {
+  color: gray;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-preferred-size: 50px;
+      flex-basis: 50px;
+  margin: 10px;
+}
+
+.aside .hotel {
+  color: yellow;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-preferred-size: 50px;
+      flex-basis: 50px;
+  margin: 10px;
+}
+
+.aside .seguro {
+  color: lightsalmon;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-preferred-size: 50px;
+      flex-basis: 50px;
+  margin: 10px;
+}
+
+.aside .paq {
+  color: lightblue;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-preferred-size: 50px;
+      flex-basis: 50px;
+  margin: 10px;
+}
+
+h6 {
+  padding: 20px;
+  border: 0;
+  text-align: center;
+  color: lightgoldenrodyellow;
+  background-color: lightsalmon;
+  width: 15%;
+  position: absolute;
+  top: 550px;
+  left: 950px;
+  -webkit-animation-name: animate__swing;
+          animation-name: animate__swing;
+  -webkit-animation-iteration-count: infinite;
+          animation-iteration-count: infinite;
+  -webkit-animation-duration: 4s;
+          animation-duration: 4s;
+}
+
+@-webkit-keyframes animate__swing {
+  0% {
+    width: 200px;
+    background-color: gray;
+  }
+  40% {
+    width: 200px;
+    background-color: lightblue;
+  }
+  80% {
+    width: 200px;
+    background-color: gray;
+  }
+}
+
+@keyframes animate__swing {
+  0% {
+    width: 200px;
+    background-color: gray;
+  }
+  40% {
+    width: 200px;
+    background-color: lightblue;
+  }
+  80% {
+    width: 200px;
+    background-color: gray;
+  }
+}
+
+/*documentacion para viajar*/
+.doc {
+  font-size: 15px;
+  border: 2px dashed lightgoldenrodyellow;
+  background-image: -webkit-gradient(linear, left top, left bottom, from(lightsalmon), color-stop(lightblue), to(lightsalmon));
+  background-image: linear-gradient(lightsalmon, lightblue, lightsalmon);
+  font-family: 'Yomogi', cursive;
+  position: relative;
+  top: 150px;
+  text-align: center;
+  font-weight: bold;
+}
+
+.doc .fas {
+  font-size: 35px;
+  background-color: lightgoldenrodyellow;
+}
+
+/*tabla con los 4 productos principales*/
+.table {
+  border: 5px dashed lightsalmon;
+  color: gray;
+  position: absolute;
+  top: 150px;
+  right: 10px;
+}
+
+.table .button {
+  text-decoration: none;
+  font-family: 'Yomogi', cursive;
+  -webkit-transition: width 5s;
+  transition: width 5s;
+}
+
+.table .decoButton {
+  text-decoration: none;
+  -webkit-box-flex: 0;
+      -ms-flex: 0 0 200px;
+          flex: 0 0 200px;
+  margin: 10px;
+  border: 1px solid #ccc;
+  -webkit-box-shadow: 2px 2px 6px 0px rgba(0, 0, 0, 0.3);
+          box-shadow: 2px 2px 6px 0px rgba(0, 0, 0, 0.3);
+  background: gray;
+  color: white;
+  padding: 10px;
+  width: 100%;
+  -webkit-transition: font-size 2s;
+  transition: font-size 2s;
+}
+
+.table .decoButton:hover {
+  background: lightblue;
+  font-size: 35px;
+  text-decoration: none;
+}
+
+.table h3 {
+  font: 20px 'Yomogi', cursive;
+  font-weight: bold;
+  background-color: lightsalmon;
+  margin: 10px;
+  border: 2px solid lightgoldenrodyellow;
+  text-align: center;
+  text-transform: uppercase;
+}
+
+/*video de viajeros*/
+.videoTur {
+  background-color: lightblue;
+  border: none;
+  width: auto;
+  height: 200px;
+  position: relative;
+  top: 150px;
+}
+
+footer {
+  background-color: lightgoldenrodyellow;
+  border: 5px solid lightsalmon;
+  font-family: 'Yomogi', cursive;
+  font-weight: bold;
+  justify-items: center;
+}
+
+footer .pieDePagina1 i {
+  font-size: 25px;
+  margin: 5px;
+  text-align: center;
+  position: relative;
+  top: 05px;
+}
+
+footer .pieDePagina1 i:first-child {
+  color: blue;
+}
+
+footer .pieDePagina1 i:nth-child(2) {
+  border: 2px solid blueviolet;
+  background-color: deeppink;
+  color: white;
+}
+
+footer .footer__article--exchange {
+  margin: 5px;
+  text-align: center;
+  position: relative;
+  top: 05px;
+}
+
+footer .pieDePagina3 {
+  margin: 5px;
+  text-align: center;
+  position: relative;
+  top: 05px;
+}
+
+.btn--red1 {
+  background-color: lightblue;
+  text-align: center;
+}
+
+.btn--red2 {
+  background-color: coral;
+  text-align: center;
+}
+
+/*todos los titulos dentro del menu, llevan h2*/
+h2 {
+  background: lightgoldenrodyellow;
+  border: 5px solid lightsalmon;
+  text-align: center;
+  font-family: 'Yomogi', cursive;
+}
+
+/*dentro del boton de Empresa*/
+.quienesSomos {
+  width: 80%;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  font-size: arial;
+  background: lightgoldenrodyellow;
+  margin: 20px;
+  border: 5px solid lightsalmon;
+  text-align: center;
+  font-family: 'Yomogi', cursive;
+}
+
+/*dentro del boton Contacto*/
+#form {
+  background-color: lightsalmon;
+  font-family: 'Yomogi', cursive;
+  font-weight: bold;
+  list-style-type: none;
+  padding: 20px;
+  border: dashed lightgoldenrodyellow;
+}
+
+#form .form {
+  float: right;
+  border-radius: 10px;
+}
+
+#form #checkbox {
+  margin: 10px;
+}
+
+#form .btn.btn-primary {
+  display: inline-block;
+}
+
+#form .comentario {
+  -webkit-transition: width 20s;
+  transition: width 20s;
+}
+
+#form .comentario:hover {
+  width: 90%;
+  height: 100px;
+}
+
+.map {
+  font-size: arial;
+  background: lightgoldenrodyellow;
+  width: 300px;
+  height: auto;
+  margin: 20px;
+  border: 5px solid lightsalmon;
+  text-align: center;
+  font-family: 'Yomogi', cursive;
+  position: relative;
+  top: 10px;
+  left: 30px;
+}
+
+h4 {
+  font-size: arial;
+  background: lightgoldenrodyellow;
+  width: 300px;
+  height: auto;
+  margin: 20px;
+  border: 5px solid lightsalmon;
+  text-align: center;
+  font-family: 'Yomogi', cursive;
+  position: relative;
+  top: 10px;
+  left: 30px;
+}
+
+/*dentro del boton de Empresa*/
+p {
+  font-size: arial;
+  background: lightgoldenrodyellow;
+  width: 300px;
+  height: auto;
+  margin: 20px;
+  border: 5px solid lightsalmon;
+  text-align: center;
+  font-family: 'Yomogi', cursive;
+  position: relative;
+  top: 10px;
+  left: 30px;
+}
+
+/*dentro del boton de Administracion*/
+.pago {
+  font-size: 20px;
+  background: lightgoldenrodyellow;
+  width: 250px;
+  height: auto;
+  margin: 10px;
+  border: 5px solid lightsalmon;
+  font-family: 'Yomogi', cursive;
+  list-style-type: none;
+  text-align: center;
+  position: relative;
+  right: 200px;
+  top: -10px;
+}
+
+.imgt {
+  width: 250px;
+  height: 165px;
+  border: 5px solid lightsalmon;
+}
+
+/*dentro del boton de Ayuda*/
+.Ayuda__deco {
+  background: lightgoldenrodyellow;
+  width: 300px;
+  height: auto;
+  border: 5px solid lightsalmon;
+  text-align: center;
+  font-family: 'Yomogi', cursive;
+}
+
+h3 {
+  font: 20px 'Yomogi', cursive;
+  font-weight: bold;
+  background-color: lightsalmon;
+  margin: 10px;
+  border: 2px solid lightgoldenrodyellow;
+  text-align: center;
+  text-transform: uppercase;
+}
+
+/*dentro del boton de Error 404*/
+.error {
+  text-decoration: none;
+  width: 250px;
+  height: auto;
+  position: relative;
+  left: 40%;
+  border: dashed;
+  text-transform: uppercase;
+}
+
+/*estan todos los paquetes,destios que seran modificados constantemente*/
+.destinoBACE {
+  min-height: auto vh;
+  background-image: -webkit-gradient(linear, left bottom, left top, color-stop(30%, lightsalmon), to(gray));
+  background-image: linear-gradient(to top, lightsalmon 30%, gray);
+  color: blue;
+  font-weight: bold;
+  text-decoration: none;
+  list-style-type: none;
+  font-size: 18px;
+  font-family: 'Yomogi';
+  border: 1px solid lightgoldenrodyellow;
+  text-align: center;
+  margin: 2%;
+  padding: 20px;
+}
+
+.div--destinoEUROPA {
+  border: none;
+  display: -ms-grid;
+  display: grid;
+  -ms-grid-columns: 40% 40%;
+      grid-template-columns: 40% 40%;
+  -ms-grid-rows: 1fr 1fr 1fr;
+      grid-template-rows: 1fr 1fr 1fr;
+  grid-row-gap: 50px;
+  grid-column-gap: 2%;
+}
+
+.div--destinoCARIBE {
+  border: none;
+  display: -ms-grid;
+  display: grid;
+  -ms-grid-columns: 40% 40%;
+      grid-template-columns: 40% 40%;
+  -ms-grid-rows: 1fr 1fr 1fr;
+      grid-template-rows: 1fr 1fr 1fr;
+  grid-row-gap: 50px;
+  grid-column-gap: 2%;
+}
+
+.div--destinoBRASIL {
+  border: none;
+  display: -ms-grid;
+  display: grid;
+  -ms-grid-columns: 40% 40%;
+      grid-template-columns: 40% 40%;
+  -ms-grid-rows: 1fr 1fr 1fr;
+      grid-template-rows: 1fr 1fr 1fr;
+  grid-row-gap: 50px;
+  grid-column-gap: 2%;
+}
+
+.div--destinoARG {
+  display: -ms-grid;
+  display: grid;
+  -ms-grid-columns: 40% 40%;
+      grid-template-columns: 40% 40%;
+  -ms-grid-rows: 1fr 1fr 1fr;
+      grid-template-rows: 1fr 1fr 1fr;
+  grid-row-gap: 50px;
+  grid-column-gap: 2%;
+}
+/*# sourceMappingURL=estilos.css.map */
